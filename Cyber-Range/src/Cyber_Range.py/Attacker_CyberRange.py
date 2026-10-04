@@ -1,5 +1,12 @@
-import docker
+from importlib import import_module
 import time
+
+try:
+    docker = import_module("docker")
+except ModuleNotFoundError as exc:
+    raise SystemExit(
+        "Docker SDK for Python is not installed. Run: python -m pip install docker"
+    ) from exc
 
 client = docker.from_env()
 
