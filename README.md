@@ -22,3 +22,5 @@ It allows you to simulate cyber attacks, test defensive tools, and experiment wi
 Install Python dependencies:
 ```bash
 pip install -r requirements.txt
+
+## Victim web app: http://localhost:8000
